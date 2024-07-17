@@ -27,8 +27,8 @@ export default function Home() {
                             <Image
                                 src={pokemon.sprites.front_default}
                                 alt={pokemon.name}
-                                width={96}
-                                height={96}
+                                width={150}
+                                height={150}
                             />
                             <h3 className={styles.subtitle}>{pokemon.name}</h3>
                             <p className={styles.paragraph}>{pokemon.characteristics}</p>

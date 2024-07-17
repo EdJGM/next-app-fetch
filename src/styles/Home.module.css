@@ -27,6 +27,10 @@
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
     flex-basis: calc(33.333% - 2rem);
     /* 3 columns with space between */
@@ -45,7 +49,7 @@
 .card:focus,
 .card:active {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.63);
 }
 
 .card img {
