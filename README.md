@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pokémon Fetcher
 
-## Getting Started
+Esta aplicación es un ejemplo de cómo obtener y mostrar información sobre Pokémon utilizando la API de PokeAPI. La aplicación está construida con Next.js y TypeScript.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Obtiene una lista de Pokémon de la API de PokeAPI.
+- Para cada Pokémon, obtiene detalles adicionales, incluyendo características en español.
+- Muestra los Pokémon en una cuadrícula con sus imágenes, nombres y características.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clona el repositorio:
+    ```sh
+    git clone <URL_DEL_REPOSITORIO>
+    ```
+2. Navega al directorio del proyecto:
+    ```sh
+    cd <NOMBRE_DEL_DIRECTORIO>
+    ```
+3. Instala las dependencias:
+    ```sh
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Uso
 
-## Learn More
+1. Inicia el servidor de desarrollo:
+    ```sh
+    npm run dev
+    ```
+2. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-To learn more about Next.js, take a look at the following resources:
+## Estructura del Proyecto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `pages/index.tsx`: Componente principal que muestra la lista de Pokémon.
+- `lib/getsPokemons.tsx`: Función para obtener los datos de los Pokémon desde la API.
+- `styles/Home.module.css`: Estilos CSS para la página principal.
+- `next.config.mjs`: Configuración de Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Dependencias
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [PokeAPI](https://pokeapi.co/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribuir
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva característica'`).
+4. Haz push a la rama (`git push origin feature/nueva-caracteristica`).
+5. Abre un Pull Request.

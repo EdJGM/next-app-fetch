@@ -1,0 +1,69 @@
+/* HOME.MODULE.CSS */
+.container {
+    padding: 0 2rem;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+}
+
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    /* Adjusted to fit more cards */
+    margin-top: 3rem;
+}
+
+.card {
+    margin: 1rem;
+    flex-basis: calc(33.333% - 2rem);
+    /* 3 columns with space between */
+    padding: 1.5rem;
+    text-align: left;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #0070f3;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.paragraph {
+    font-size: 1rem;
+    color: #666;
+}
