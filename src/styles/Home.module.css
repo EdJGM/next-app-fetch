@@ -1,8 +1,7 @@
 /* HOME.MODULE.CSS */
 .container {
     padding: 0 2rem;
-    /*fondo oscuro-negro*/
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
     min-height: 100vh;
 }
 
@@ -22,8 +21,6 @@
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
-    /* Adjusted to fit more cards */
-
 }
 
 .card {
@@ -39,35 +36,76 @@
     color: #333;
     text-decoration: none;
     border: 1px solid #eaeaea;
-    border-radius: 10px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     background-color: #fff;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.63);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-    max-width: 100%;
-    border-radius: 10px;
+    max-width: 80%;
+    border-radius: 15px;
 }
 
 .title {
-    font-size: 3.5rem;
-    color: #0070f3;
+    font-size: 4rem;
+    color: #ff4081;
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #333;
+    margin-top: 0.5rem;
 }
 
 .paragraph {
-    font-size: 1rem;
-    color: #666;
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card {
+        flex-basis: calc(50% - 2rem);
+        /* 2 columns on tablets and medium screens */
+    }
+
+    .title {
+        font-size: 3rem;
+        /* Smaller title size */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 2rem);
+        /* 2 columns on smaller screens */
+    }
+
+    .title {
+        font-size: 2.5rem;
+        /* Smaller title size */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-basis: 100%;
+        /* 1 column on very small screens */
+    }
+
+    .title {
+        font-size: 2rem;
+        /* Smaller title size */
+    }
 }
